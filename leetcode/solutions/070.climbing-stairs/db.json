@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int climbStairs(int n) {\n        if (n < 0) return 0;\n        if (n == 1) return 1;\n        int[] map = new int[n];\n        map[0] = 1;\n        map[1] = 2;\n        for (int i = 2; i < n; i++) {\n            map[i] = map[i - 1] + map[i - 2];\n        }\n        return map[n - 1];\n    }\n}"}

@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int strStr(String haystack, String needle) {\n        for (int i = 0; ; i++) {\n            for (int j = 0; ; j++) {\n                if (j == needle.length()) return i;\n                if (i + j == haystack.length()) return -1;\n                if (needle.charAt(j) != haystack.charAt(i + j)) break;\n            }\n        }\n    }\n}"}

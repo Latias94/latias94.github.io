@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int getSum(int a, int b) {\n        return b == 0 ? a : getSum(a ^ b, (a & b) << 1);\n    }\n}"}

@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public boolean isPerfectSquare(int num) {\n        int sqrt = mySqrt(num);\n        return sqrt * sqrt == num;\n    }\n\n    public int mySqrt(int x) {\n        long r = x;\n        while (r * r > x)\n            r = (r + x / r) / 2;\n        return (int) r;\n    }\n}"}

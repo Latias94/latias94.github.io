@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int addDigits(int num) {\n        int sum = num;\n        while (sum >= 10) {\n            num = sum;\n            sum = 0;\n            while (num != 0) {\n                sum += num % 10;\n                num /= 10;\n            }\n        }\n        return sum;\n    }\n}"}

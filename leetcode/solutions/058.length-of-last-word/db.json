@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int lengthOfLastWord(String s) {\n        return s.trim().length() - s.trim().lastIndexOf(\" \") - 1;\n    }\n}"}

@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int searchInsert(int[] nums, int target) {\n        for (int i = 0; i < nums.length; i++) {\n            if (nums[i] >= target) return i;\n        }\n        return nums.length;\n    }\n}"}

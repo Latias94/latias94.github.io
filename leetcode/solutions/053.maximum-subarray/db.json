@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int maxSubArray(int[] nums) {\n        int maxSum = Integer.MIN_VALUE, curSum = 0;\n        for (int num : nums) {\n            curSum += num;\n            if (curSum > maxSum) maxSum = curSum;\n            if (curSum < 0) curSum = 0;\n        }\n        return maxSum;\n    }\n}"}

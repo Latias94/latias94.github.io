@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public char findTheDifference(String s, String t) {\n        int length = t.length();\n        char c = t.charAt(length - 1);\n        for (int i = 0; i < length - 1; i++) {\n            c ^= s.charAt(i);\n            c ^= t.charAt(i);\n        }\n        return c;\n    }\n}"}

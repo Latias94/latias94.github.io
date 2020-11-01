@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public String reverseString(String s) {\n        StringBuffer sb = new StringBuffer();\n        for (int j = s.length() - 1; j >= 0; j--) {\n                sb.append(s.charAt(j));\n            }\n        return sb.toString();\n    }\n}"}

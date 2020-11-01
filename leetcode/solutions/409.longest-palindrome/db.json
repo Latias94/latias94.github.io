@@ -1,0 +1,1 @@
+{"java":"class Solution {\n    public int longestPalindrome(String s) {\n        int[] arr = new int[128];\n        int res = 0;\n\n        for (char c : s.toCharArray()) {\n            if ((arr[c] % 2) == 1) {\n                res += 2;\n            }\n            arr[c]++;\n        }\n        return s.length() > res ? res + 1 : res;\n    }\n}"}
