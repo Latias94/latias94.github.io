@@ -1,0 +1,499 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>《流畅的 Python》读书笔记 | 萤火之森</title><meta name="keywords" content="读后感,Python,笔记"><meta name="author" content="猫冬"><meta name="copyright" content="猫冬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="两个问题 学了 Python 基础就够了吗？ 前言的引言给出了答案：  要不这样吧，如果编程语言里有个地方你弄不明白，而正好又有个人用了这个功能，那就开枪把他打死。这比学习新特性要容易些，然后过不了多久，那些活下来的程序员就会开始用 0.9.6 版的 Python，而且他们只需要使用这个版本中易于理解的那一小部分就好了（眨眼） 。 —— Tim Peters 传奇的核心开发者， “Python 之">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《流畅的 Python》读书笔记">
+<meta property="og:url" content="http://frankorz.com/2017/07/01/fluent-python-note/index.html">
+<meta property="og:site_name" content="萤火之森">
+<meta property="og:description" content="两个问题 学了 Python 基础就够了吗？ 前言的引言给出了答案：  要不这样吧，如果编程语言里有个地方你弄不明白，而正好又有个人用了这个功能，那就开枪把他打死。这比学习新特性要容易些，然后过不了多久，那些活下来的程序员就会开始用 0.9.6 版的 Python，而且他们只需要使用这个版本中易于理解的那一小部分就好了（眨眼） 。 —— Tim Peters 传奇的核心开发者， “Python 之">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://frankorz.com/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)">
+<meta property="article:published_time" content="2017-07-01T01:06:19.000Z">
+<meta property="article:modified_time" content="2019-08-17T04:00:27.000Z">
+<meta property="article:author" content="猫冬">
+<meta property="article:tag" content="读后感">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://frankorz.com/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)"><link rel="shortcut icon" href="/imgs/favicon.ico"><link rel="canonical" href="http://frankorz.com/2017/07/01/fluent-python-note/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-69634396-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-69634396-1');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2019-08-17 12:00:27'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/imgs/head.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">萤火之森</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">《流畅的 Python》读书笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2017-07-01T01:06:19.000Z" title="发表于 2017-07-01 09:06:19">2017-07-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2019-08-17T04:00:27.000Z" title="更新于 2019-08-17 12:00:27">2019-08-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>20分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《流畅的 Python》读书笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><span class="disqus-comment-count"><a href="http://frankorz.com/2017/07/01/fluent-python-note/#disqus_thread"></a></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="两个问题">两个问题</h2>
+<h3 id="学了-Python-基础就够了吗？">学了 Python 基础就够了吗？</h3>
+<p>前言的引言给出了答案：</p>
+<blockquote>
+<p>要不这样吧，如果编程语言里有个地方你弄不明白，而正好又有个人用了这个功能，那就开枪把他打死。这比学习新特性要容易些，然后过不了多久，那些活下来的程序员就会开始用 0.9.6 版的 Python，而且他们只需要使用这个版本中易于理解的那一小部分就好了（眨眼） 。<br>
+—— Tim Peters<br>
+传奇的核心开发者， “Python 之禅”作者</p>
+</blockquote>
+<span id="more"></span>
+<h3 id="这本书的目的是什么？">这本书的目的是什么？</h3>
+<p>第十一章的杂谈里给出了答案：</p>
+<blockquote>
+<p>这正是本书的主要目的：着重讲解这门语言的基本惯用法，让你的代码简洁、高效且可读，把你打造成熟练的 Python 程序员。</p>
+</blockquote>
+<p>另外本书的<a target="_blank" rel="noopener" href="http://www.ituring.com.cn/book/tupubarticle/13727">前言</a>里也有提及书本的目标读者和非目标读者。</p>
+<blockquote>
+<p>如果你才刚刚开始学 Python，本书的内容可能会显得有些“超纲”。比难懂更糟的是，如果在学习 Python 的过程中过早接触本书的内容，你可能会误以为所有的 Python 代码都应该利用特殊方法和元编程（metaprogramming）技巧。我们知道，不成熟的抽象和过早的优化一样，都会坏事。</p>
+</blockquote>
+<h2 id="对内容的一些评价">对内容的一些评价</h2>
+<p>从书目录结构来看，作者的眼界十分开阔，每章最后有小结、延伸阅读、和相关的一些杂谈。书的前一部分从 Python 特性出发，参考了很多语言的相关做法和实现，来解释 Python 的设计。</p>
+<p>书中时常引用一些参考资料，有些是邮件列表里的讨论、维基百科、一些十分优秀的程序员的撰写的文章和演讲视频。这意味着你可以在某一个概念看到不同的观点，看到优秀的程序员是怎么思考一个问题的。</p>
+<p>作者从1998年成为了 Python 程序员，是巴西一家培训机构的共同所有者，也为巴西的媒体、银行和政府部门教授 Python 课程，由此可见本书的代码会是十分透彻和浅显易懂的，事实也的确如此。从代码示例来看，作者为大部分代码提供了 doctest 测试，并且在为某一个知识点提供代码示例时，追求的是简单、直接，同时示例的难度是循序渐进的。加上作者在大部分代码行提供了说明，让读者能十分流畅地理解概念。（对比：《Go 程序设计语言》讲复数语法时用 Mandelbrot 图像作为示例，苦笑）</p>
+<h2 id="对翻译的一些评价">对翻译的一些评价</h2>
+<p>整体翻译还是不错的，几百页的书的勘误也才十多个，部分术语可能还要参考书里的术语翻译表，个人认为容易弄混的有特性（properties）和属性（attributes），还有函数（function）和方法（method）。后者的区别可以参考<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/155609/difference-between-a-method-and-a-function">Difference between a method and a function</a>，简单的说法就是函数（function）定义在类外面，而方法（method）定义在类里面，是类的一部分。两者也可以根据是否独立于对象来判断。</p>
+<blockquote>
+<p>黄志斌：这本书第2次印刷时已经把“期物”改为“future”了。</p>
+</blockquote>
+<p>P21 前面那种方式显然能够节省内存。 前者指的是 genexp，即生成器表达式。</p>
+<h2 id="章节简介">章节简介</h2>
+<p>这本书的结构十分优秀，每一章节都有前言和小结，因此章节简介我偏向于写些零散的知识点和个人感受，会比较乱。大部分章节的章节简介最后会有个人阅读时做的笔记，章节简介没提及的内容可以看看我的笔记。</p>
+<p>全部的笔记还可以在这里找到：<a target="_blank" rel="noopener" href="https://github.com/Latias94/fluent-python-notes">Latias94/fluent-python-notes</a></p>
+<h3 id="第一章">第一章</h3>
+<p>第一章作者就介绍了 Python 中的特殊方法，特殊方法也是贯穿这本书的基础。</p>
+<p>读这本书之前，自己通常会遇到<code>__init__</code>、<code>__new__</code>、<code>__name__ == '__main__'</code>等等的带双下划线的特殊方法，但是通过零散的知识点很难形成体系，而这本书涵盖了绝大部分的特殊方法，并且分章节详细地讨论其背后特殊方法的作用，而这一章就是了解特殊方法的第一步。</p>
+<p>作者提到了合理的字符串表示形式：<code>__repr__</code> 和 <code>__str__</code>。前者方便我们调试和记录日志，后者则是给终端用户看的。</p>
+<p>作者开篇就提出了两个问题，第一个问题是：</p>
+<blockquote>
+<p>为什么说 Python 最好的品质之一是一致性？</p>
+</blockquote>
+<p>并且在第十二页给出了答案：</p>
+<blockquote>
+<p>不能让特例特殊到开始破坏既定规则。</p>
+</blockquote>
+<p>第二个问题是：</p>
+<blockquote>
+<p><code>len(collection)</code> 和 <code>collection.len()</code> 有什么不同？和“Python 风格” （Pythonic）有什么关系？</p>
+</blockquote>
+<p>核心开发者 Raymond Hettinger 的答案是：</p>
+<blockquote>
+<p>实用胜于纯粹<br>
+practicality beats purity<br>
+——《<a target="_blank" rel="noopener" href="https://www.python.org/doc/humor/#the-zen-of-python">The Zen of Python</a>》</p>
+</blockquote>
+<p>作者给出解释：</p>
+<blockquote>
+<p>len 是特殊方法，是为了让 Python 自带的数据结构可以走后门，abs 也是同理。（解释：因为如果 x 是一个内置类型的实例，<code>len(x)</code>的背后会用 CPython 直接从 C 结构体中读取对象的长度，不调用任何方法，以至于 <code>len(x)</code> 会非常快。）<br>
+…<br>
+这种处理方式在保持内置类型的效率和保证语言的一致性之间找到了一个平衡点，也印证了“Python 之禅”中的另外一句话：“不能让特例特殊到开始破坏既定规则。”</p>
+</blockquote>
+<p>从这两个问题就能看出作者想要强调的是：「<strong>Python 风格</strong> 无处不在」。为了更好地理解 Python 实现，最好了解 Python 的设计风格。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/z2mHiiCMKpYW5CpEC1voainyDyh7zqaA2jqnK6AU">特殊方法</a></p>
+<h3 id="第二章">第二章</h3>
+<p>第二三四章主讲 Python 数据结构及其背后的实现，而第二章主要讲了可变类型与不可变类型的区别。</p>
+<p>要想写出准确、高效和地道的 Python 代码，对标准库里的序列类型的掌握是不可或缺的。数据结构的产生就是为了满足各种不同的需求，例如能让用户在不复制内容的情况下操作同一个数组的不同切片的 memoryview，能高效处理矩阵、矢量等高级数值运算的 NumPy 和专为线性代数、数值积分和统计学而设计并基于 NumPy 的 SciPy。计算机科学家主要抽象了几大数据类型：字典、数组、列表等，这些数据类型都有不同的使用环境，使用好这些工具能让你事半功倍、节省不必要的消耗。</p>
+<p>另外，在读这本书的前几天，我刚好在 Segmentfault 里面看到一个问题 <a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000009754631">python小白 问关于a+=a 和a=a+a的区别</a>，当时看完答案还有点似懂非懂的感觉，而读完这章我能完全理解其区别所在了。</p>
+<p>扩展阅读：<a target="_blank" rel="noopener" href="https://facert.gitbooks.io/python-data-structure-cn">problem-solving-with-algorithms-and-data-structure-using-python 中文版</a></p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/rabZb1p3GadkxZD7sWms2Wyzaz6mELZAKaGX9De2">序列构成的数组</a></p>
+<h3 id="第三章">第三章</h3>
+<p>前一章提到了列表、元组这两种序列，以及它们的生成器表达式。这一章则介绍了散列表的基本概念、其背后的算法和由散列表实现的数据类型：字典和集合。</p>
+<ul>
+<li>由于字典是由散列表实现的，因此字典的键必须是可散列的。</li>
+<li>set 类型本身不是可散列的（因为 set 是可变的），但其元素必须可散列。（这也是为什么 list 不能作为字典键的原因）</li>
+<li>frozenset 是可散列的。</li>
+<li>散列表的实现导致它实现的数据类型效率很高，但这是以牺牲空间的代价所带来的。</li>
+</ul>
+<blockquote>
+<p>“优化往往是可维护性的对立面”<br>
+由于字典使用了散列表，而散列表又必须是稀疏的，这导致它在空间上的效率低下。举例而言，如果你需要存放数量巨大的记录，那么放在由元组或是具名元组构成的列表中会是比较好的选择；最好不要根据 JSON 的风格，用由字典组成的列表来存放这些记录。用元组取代字典就能节省空间的原因有两个：其一是避免了散列表所耗费的空间，其二是无需把记录中字段的名字在每个元素里都存一遍。</p>
+</blockquote>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/sy6m2gQJ5CdFBQz7cyCRq6YjKLzzkqQXofC8w26V">字典和集合</a></p>
+<h3 id="第四章">第四章</h3>
+<p>目前没遇到过编码问题，不看。</p>
+<h3 id="第五章">第五章</h3>
+<p>第五章的主题是：高阶函数没这么重要了。</p>
+<p>先来一段吐槽：</p>
+<blockquote>
+<p>Lundh 提出的 lambda 表达式重构秘笈如果使用 lambda 表达式导致一段代码难以理解，Fredrik Lundh 建议像下面这样重构。<br>
+(1) 编写注释，说明 lambda 表达式的作用。<br>
+(2) 研究一会儿注释，并找出一个名称来概括注释。<br>
+(3) 把 lambda 表达式转换成 def 语句，使用那个名称来定义函数。<br>
+(4) 删除注释。<br>
+摘自“Functional Programming HOWTO”</p>
+</blockquote>
+<p>现在函数式编程十分流行，但 Python 独特的语法使得 lambda、map、filter 和 reduce 这些函数没这么重要了，因为我们有 sum、all 等归约函数，还有 sorted、min、max 和 functools 这样的内置的高阶函数。</p>
+<p>最后（5.10.2小节）讲了一个和函数柯里化（Currying）十分相像的概念——偏函数（Partial Application），这两者概念其实不一样。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/EpbDRnypkaZgmDb6cLwgPcenxExjWA75689ah91p">一等函数</a></p>
+<h3 id="第六章">第六章</h3>
+<p>作者从策略模式开始，讨论了一等函数在设计模式中的角色，并用一等函数简化了设计模式的实现方式，以此来展示 Pythonic 的设计模式应该是什么样子的。</p>
+<p>扩展阅读：<a target="_blank" rel="noopener" href="https://github.com/wklken/py-patterns">设计模式的python实现</a></p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/rwYjfffMs8Zi8cKSWyU1ybshb6mgXiiFp4MbDrj6">使用一等函数实现设计模式</a></p>
+<h3 id="第七章">第七章</h3>
+<p>第七章介绍了装饰器和闭包，作者给闭包下了一个清晰的定义：</p>
+<blockquote>
+<p>闭包指延伸了作用域的函数，其中包含函数定义体中引用、但是不在定义体中定义的非全局变量。函数是不是匿名的没有关系，关键是它能访问定义体之外定义的非全局变量。</p>
+</blockquote>
+<p>作者用一个闭包实例和作用相同的类来比较，引出了自由变量（free variable）的概念，以此指出闭包与普通函数不一样的地方——闭包会保留定义函数时存在的自由变量的绑定。在此之后，再引出可变类型与不可变类型对自由变量的影响，从而引出可能导致闭包失效的原因（第二章的主题：可变类型与不可变类型的区别），同时给出了解决办法：nonlocal 声明。</p>
+<p>本章结尾的杂谈提到了「一般来说，实现“装饰器”模式时最好使用类表示装饰器和要包装的组件。」，也就是通过实现 <code>__call__</code> 方法的类来实现装饰器。遗憾的是本书只通过函数来解说装饰器以助于理解，类装饰器没有提及多少。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/bZa9sX9dA7qcbsGbVqnU6c3ryky8g2QDWfiHqqhm">函数装饰器和闭包</a></p>
+<h3 id="第八章">第八章</h3>
+<blockquote>
+<p>不可变集合不变的是所含对象的标识。</p>
+</blockquote>
+<p>第八章中，作者从「元组是不可变的，但是其中的值可以改变」引申到浅复制和深复制的区别。</p>
+<p><img src="http://img.frankorz.com/5956006435780.jpg" alt=""></p>
+<p>浅复制带来的影响可以参考 <a target="_blank" rel="noopener" href="http://www.pythontutor.com/visualize.html#code=l1%20%3D%20%5B3,%20%5B66,%2055,%2044%5D,%20%287,%208,%209%29%5D%0Al2%20%3D%20list%28l1%29%20%0Al1.append%28100%29%0Al1%5B1%5D.remove%2855%29%0Aprint%28'l1%3A',%20l1%29%0Aprint%28'l2%3A',%20l2%29%0Al2%5B1%5D%20%2B%3D%20%5B33,%2022%5D%0Al2%5B2%5D%20%2B%3D%20%2810,%2011%29%20%0Aprint%28'l1%3A',%20l1%29%0Aprint%28'l2%3A',%20l2%29&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=false&amp;mode=display&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">example</a>（点 foward 显示下一步）</p>
+<p>作者还提到了两个容易忽略的函数参数引用问题：</p>
+<ol>
+<li>不要使用可变类型作为参数的默认值</li>
+<li>防御可变参数</li>
+</ol>
+<p>最后一节讨论垃圾回收、del 命令，以及如何使用弱引用“记住”对象，而无需对象本身存在。</p>
+<p>另外这章有意思的地方在于作者提到了一个常见的说法错误：「对引用式变量来说，说把变量分配给对象更合理，反过来说就有问题。毕竟对象在赋值之前就创建了。」</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/6ZayEUVKgEVAApAPc6aDmjByaB3Qq4hUPQSWBdK2">对象引用、可变性和垃圾回收</a></p>
+<h3 id="第九章">第九章</h3>
+<blockquote>
+<p>要构建符合 Python 风格的对象，就要观察真正的 Python 对象的行为。<br>
+——古老的中国谚语</p>
+</blockquote>
+<p>第九章主要讲如何编写 Pythonic 的对象。作者从构建一个 Vector 类型来介绍符合 Python 风格的类需要注意的地方，例如<code>__repr__</code>不要硬编码类名、类属性的私有化、格式规范微语言、散列化要注意的条件等。</p>
+<p>作者还讲了构建一个可散列的类型所需要实现的条件：</p>
+<ol>
+<li>正确的实现<code>__hash__</code>和<code>__eq__</code>方法</li>
+<li>不一定要实现只读属性，但是要保证实例的散列值绝不能变化。</li>
+</ol>
+<p>类属性用于为实例属性提供默认值。Django 的类视图也大量用到了这个特性。</p>
+<p>个人十分喜欢名称改写（属性的私有化）中的一张示意图：<br>
+「避免意外访问，但不能防止故意做错事。」，以此来提醒名称改写所实现的私有化自身的缺陷。</p>
+<p><img src="http://img.frankorz.com/5956006706191.jpg" alt=""></p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/sJg5G9wfSRP4Le67FDqErjYGGqxhEPNYpMCnpj1Q">符合 Python 风格的对象</a></p>
+<h3 id="第十章">第十章</h3>
+<blockquote>
+<p>不要检查它是不是鸭子、它的叫声像不像鸭子、它的走路姿势像不像鸭子，等等。具体检查什么取决于你想使用语言的哪些行为。 （comp.lang.python，2000 年 7 月 26 日）<br>
+——Alex Martelli</p>
+</blockquote>
+<p>其中介绍了鸭子类型，指忽略对象的真正类型，转而关注对象有没有实现所需的方法、签名和语义。在 Python 中指免使用 isinstance 检查对象的类型。</p>
+<p>如果我想实现一个序列，可以实现<code>__init__</code>、<code>__len__</code>、<code>__getitem__</code>等一序列的方法，使其行为像序列，那么这就是一个序列，这也就是人们所称的鸭子类型（duck typing）。</p>
+<p>自己的理解：要明白自己希望的鸭子有哪些特性，只要我实现出来了，那么这就是鸭子。</p>
+<p>Tips:</p>
+<ul>
+<li>可以用 <code>dir(slice)</code> 来查看序列的属性</li>
+<li>当 Python 库文档查询不到方法的文档的时候，可以尝试用 <code>help(slice.indices)</code> 来查询。（ 直接查询<code>__doc__</code>属性的信息 ）</li>
+</ul>
+<p>第四小节讲可切片的序列需要关注的两个问题：</p>
+<ol>
+<li>
+<p>如果创建的序列内部由数组（或其他序列）实现，那么就要考虑切片对象的实现：切片返回的是自创建的序列对象 还是数组（或其他序列）？如果需要考虑，就是在 <code>__getitem__</code> 方法里修改其实现方式。</p>
+</li>
+<li>
+<p>动态存取属性，使序列能通过名称访问序列的属性（v.x,v.y代替v[0],v[1]）。也提到了实现 <code>__getitem__</code> 时可能会产生的问题，和解决方法。</p>
+</li>
+</ol>
+<p>章节末尾的杂谈提到了要遵循 KISS 原则（Keep it simple, stupid），不要过度设计协议。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/EMWUZqqSPmCA2JtZZhgWaCi7ugQfiLyiLrsy1Tqb">序列的修改、散列和切片</a></p>
+<h3 id="第十一章">第十一章</h3>
+<blockquote>
+<p>本章讨论的话题是接口：从鸭子类型的代表特征动态协议，到使接口更明确、能验证实现是否符合规定的抽象基类（Abstract Base Class，ABC）</p>
+</blockquote>
+<p>我们可能不需要写抽象基类，但是阅读本章能够教我们怎么阅读标准库和其他包中的抽象基类源码。</p>
+<p>其中，作者引用了 Alex Martelli 的一篇文章，用表型系统学(phenetics)和支序系统学（cladistics）用水禽来类比抽象基类。(⊙﹏⊙)b</p>
+<p>其中有第十章提到的「鸭子类型」，还有以前没提过的、描述一种新的 Python 编程风格的「白鹅类型」（goose typing）。</p>
+<blockquote>
+<p>白鹅类型指，只要 cls 是抽象基类，即 cls 的元类是 <code>abc.ABCMeta</code>，就可以使用 <code>isinstance(obj, cls)</code>。</p>
+</blockquote>
+<p>对此，作者在章节小结里面提到：</p>
+<blockquote>
+<p>借助「白鹅类型」，可以使用抽象基类明确声明接口，而且类可以子类化抽象基类或使用抽象基类注册（无需在继承关系中确立静态的强链接），宣称它实现了某个接口。</p>
+</blockquote>
+<p>本章最后还介绍了和 Go 语言协议的功能十分类似的 <code>__subclasshook__</code> 方法。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/SiejkpsT7xLeNL7wCH2Mrp5SaMN7Ex2EyJ5VivGL">接口：从协议到抽象基类</a></p>
+<h3 id="第十二章">第十二章</h3>
+<p>分析 GUI 工具包 Tkhinter 的多重继承，并且展开分析了多次继承所带来的「菱形问题」，以及 Python 对应的解决方案——方法解析顺序（Method Resolution Order，MRO)，最后作者给了八条关于处理多重继承的建议。</p>
+<p><a target="_blank" rel="noopener" href="https://docs.python.org/3/tutorial/classes.html#multiple-inheritance">9.5.1. Multiple Inheritance</a> 里面提到了继承顺序是深度优先从左至右不重复。</p>
+<blockquote>
+<p>For most purposes, in the simplest cases, you can think of the search for attributes inherited from a parent class as <strong>depth-first, left-to-right, not searching twice in the same class</strong> where there is an overlap in the hierarchy.</p>
+</blockquote>
+<p><img src="http://img.frankorz.com/595600652d904.jpg" alt=""></p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/qn4fVVx826kDNss71p4f3d6P2rxHsFwo5h7pQb1q">继承的优缺点</a></p>
+<h3 id="第十三章">第十三章</h3>
+<p>第十三章介绍了重载运算符的时候要考虑多重情况。</p>
+<blockquote>
+<p>In the face of ambiguity, refuse the temptation to guess.<br>
+面对太多的可能，不要尝试猜测。（ZoomQuiet禅译）<br>
+——《<a target="_blank" rel="noopener" href="https://www.python.org/doc/humor/#the-zen-of-python">The Zen of Python</a>》</p>
+</blockquote>
+<p>我们要严谨地对待可能会出现的操作数。</p>
+<p>对于为什么需要重载运算符，在杂谈中作者提到了对于一部分人来说，重载运算符是十分重要的，<strong>符合人类直觉的表示法</strong>十分重要，例如金融工作会接触到一些由不同类型的参数（整数、或其他精度的数字）组成的公式。相比于不支持运算符重载的 Go 与 Java 语言，Python 采取了折中的方式，允许重载运算符，也有一些限制，如：不能重载内置类型的运算符、不能新建运算符、一些运算符也不能重载（is、and、or、not）。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/keGv1PsLvmtApbmt6bzFjhjtwwgziGGUqyx9vN8y">正确重载运算符</a></p>
+<h3 id="第十四章">第十四章</h3>
+<p>作者分别介绍了迭代器、生成器表达式和生成器函数，并详细地列举了每个标准库生成器函数的用法。</p>
+<p>前面介绍过 Python 内置的数据类型，如列表和元组，能让我们高效地访问数据集，但这些序列只能表示已知且<strong>长度有限</strong>的数据集。要表示无限长度的数据集，例如斐波拉契数列，就需要用到新的构造方式，这也是本章的话题的由来。</p>
+<blockquote>
+<p>扫描内存中放不下的数据集时，我们要找到一种惰性获取数据项的方式，即按需一次获取一个数据项。这就是迭代器模式（Iterator pattern） 。</p>
+</blockquote>
+<p>其中作者依然很注意用词，生成器是 “yields or produces” 生成值，而不是 “returns” 返回值，这样有助于理解生成器获取结果的过程，因为生成器不是以「常规」方式返回值的。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/rbWsvgTKPcs7v9TmzxrzryuYPs631RCrXW4USZqR">可迭代的对象、迭代器和生成器</a></p>
+<h3 id="第十五章">第十五章</h3>
+<p>介绍了 else 的三种用法与上下文管理器和 with 的作用，作者用<code>__enter__</code>、<code>__exit__</code>等方法手动地实现了一个上下文管理器，还介绍了 <code>@contextmanager</code> 作为另外一种更优雅的实现上下文管理器的方法。其中 <code>@contextmanager</code> 的 <code>yield</code> 语句也引出了第十六章中协程的概念。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/eTfDEjFxWMpScyZYGfzZYGaGpooKF2LJGFvbdbRF">上下文管理器和else块</a></p>
+<h3 id="第十六章">第十六章</h3>
+<p>建议看第十六、十七、十八章之前先理解五个概念：线程、进程、协程、并发和并行。</p>
+<p>自己参考了：</p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="http://www.jianshu.com/p/f11724034d50">进程，线程，协程与并行，并发- 简书</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20511233">协程的好处是什么？- 知乎</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="http://www.jianshu.com/p/02b7a279c588">Python进程、线程、回调与协程 总结笔记</a></p>
+</li>
+</ul>
+<p>在本章中，作者介绍了如何构建协程，和协程的一些使用场景，章节末尾，作者举了一个离散事件仿真示例，说明如何使用生成器代替线程和回调，实现并发。</p>
+<p>在前些章节的基础上，作者在这章提到 yield 可以看做是控制流程的方式，即 yield 能获取值（<code>.send(foo)</code>），也能产出值（<code>foo = yield</code>），还能不获取和产出值（yield 后没有表达式）。因此，我们能用它来构建协程。</p>
+<blockquote>
+<p>不管数据如何流动，yield 都是一种流程控制工具，使用它可以实现协作式多任务：协程可以把控制器让步给中心调度程序，从而激活其他的协程。</p>
+</blockquote>
+<p>除了调用 <code>.send(...)</code> 方法发送数据，本章还介绍使用 <code>yield from</code> 结构驱动的生成器函数。</p>
+<p>扩展阅读：</p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/">SICP in Python</a> 有一段关于并行计算的非常精彩的解释：<a target="_blank" rel="noopener" href="https://wizardforcel.gitbooks.io/sicp-py/content/ch4.html#43-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97">4.3 并行计算</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/">SICP in Python</a> 中协程的一节里着重讲了将复杂程序解构为小型、模块化组件的技巧：<a target="_blank" rel="noopener" href="https://wizardforcel.gitbooks.io/sicp-py/content/ch5.html#53-%E5%8D%8F%E7%A8%8B">5.3 协程</a></p>
+</li>
+</ul>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/4qpfqK3UY5ZdNVyEje4sXnFJ9PoXTFpNJVsn2pZx">协程</a></p>
+<h3 id="第十七章">第十七章</h3>
+<blockquote>
+<p>并发是计算机科学中最难的概念之一（通常最好别去招惹它） 。<br>
+——David Beazley Python 教练和科学狂人</p>
+</blockquote>
+<p>在第十七章，作者用一个下载国旗图片的例子来介绍网络下载的三种风格：依序下载、<code>concurrent.futures</code> 模块（<code>ThreadPoolExecutor</code> 和 <code>ProcessPoolExecutor</code> 类）实现的并发下载和 asyncio 包实现的并发下载。作者还介绍了阻塞性 I/O 和 GIL，最后介绍了如何借助 <code>concurrent.futures.ProcessPoolExecutor</code> 类使用多进程。</p>
+<p>future 指一种对象，表示异步执行的操作。</p>
+<p>早期的计算机从单用户操作系统（同一时间只能运行一个任务）转变成多任务操作系统（同一时间可以运行多个任务），又由于多任务操作系统中程序经常抢夺系统资源而引发死锁这种缺陷，在 20 世纪 60 年代，计算机科学家就开始探索并发编程的道路，并发指交替执行多个任务，解决的就是前面提到的多任务操作系统的缺陷。直到现在，很多编程语言都为并发提供了支持，其中包括原生支持并发的 Go 语言，和有相关模块支持的 Python。</p>
+<blockquote>
+<p>并发（concurrency）不是并行（parallelism）。并行是让不同的代码片段同时在不同的物理处理器上执行。并行的关键是同时做很多事情，而并发是指同时管理很多事情，这些事情可能只做了一半就被暂停去做别的事情了。在很多情况下，并发的效果比并行好，因为操作系统和硬件的总资源一般很少，但能支持系统同时做很多事情。<br>
+——《Go 语言实战》</p>
+</blockquote>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/A6WWkGQgdYx9LtzvnziszgHXwKcxidy2cKKbww8r">使用future处理并发</a></p>
+<h3 id="第十八章">第十八章</h3>
+<blockquote>
+<p>并发是指一次处理多件事。<br>
+并行是指一次做多件事。<br>
+二者不同，但是有联系。<br>
+一个关于结构，一个关于执行。<br>
+并发用于制定方案，用来解决可能（但未必）并行的问题。<br>
+——Rob Pike Go 语言的创造者之一</p>
+</blockquote>
+<p>第十八章中，作者主要介绍了新的并发编程方式，对比了 <code>asyncio.Task</code> （协程）对象与 <code>threading.Thread</code> （线程）对象的区别，包括 Python 包使用方式的区别和中断时协程与线程的区别：锁的保留。章节尾，作者介绍了 asyncio 包的使用和并发编程需要注意的地方。</p>
+<p>笔记待补</p>
+<h3 id="第十九章">第十九章</h3>
+<p>第十九章主要介绍了动态属性编程。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="class"><span class="keyword">class</span> <span class="title">Foo</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line"><span class="meta">... </span>    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>foo = Foo()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>foo.a = <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Foo.b = <span class="built_in">property</span>(<span class="keyword">lambda</span> self: self.a + <span class="number">1</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>foo.b</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>这就叫做动态属性（dynamic attribute），不同于属于静态语言的 Java 需要依靠 setter 和 getter 方法，Python 能十分方便地设置属性和读取属性。</p>
+<p>作者拿 FrozenJSON 类做例子：把嵌套的字典和列表转换成嵌套的 FrozenJSON 实例和实例列表。FrozenJSON 类的代码展示了如何使用特殊的 <code>__getattr__</code> 方法（处理属性的函数）在读取属性时即时转换数据结构。</p>
+<p>作者还介绍了很多处理属性的属性和函数以及利用特性(@properties)来修改设置属性和读取属性的方式。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/ByXkheqCf71cuELJZyYHHwt47HiaeoVqrSY3nxZB">动态属性和特性</a></p>
+<h3 id="第二十章">第二十章</h3>
+<p>有时候看书看着就忘了一些名词是什么了，因此参考了下<a target="_blank" rel="noopener" href="https://harveyqing.gitbooks.io/python-read-and-write/content/python_advance/python_descriptor.html">【译】Python描述符指南</a>，描述符类就是实现描述符协议的类。</p>
+<p>相比于第十九章中利用特性（@properties）来修改属性的存取逻辑，第二十章主要介绍了描述符——对多个属性运用相同存取逻辑的一种方式。两者的区别是特性有时更合适和简单，而描述符更灵活。这章还介绍了覆盖型与非覆盖型描述符的对比，最后也给出了使用描述符的建议和优缺点。</p>
+<p>笔记传送门：<a target="_blank" rel="noopener" href="https://my.mindnode.com/GVWcPSN148gphwzVNEok3gGhFNCVWyPkVjmFe2yY">属性描述符</a></p>
+<h3 id="第二十一章">第二十一章</h3>
+<blockquote>
+<p>（元类）是深奥的知识，99% 的用户都无需关注。如果你想知道是否需要使用元类，我告诉你，不需要（真正需要使用元类的人确信他们需要，无需解释原因） 。<br>
+——Tim Peters<br>
+Timsort 算法的发明者，活跃的 Python 贡献者</p>
+</blockquote>
+<p>上面是第二十一章的引言，我听从这位传奇开发者的建议，没有看。</p>
+<h2 id="总结">总结</h2>
+<p>整本书都在强调如何最大限度地利用 Python 标准库以及讲述 Python 背后的设计思想。身处众多动态编程语言中间，Python 无疑是独行独立的，这也是为什么很多 Python 开发者骄傲地宣称自己是一名 Pythonista。</p>
+<p>自己只是不求甚解地通读了一遍书，学到了很多，但书中仍有太多不熟悉的知识点。因为假期不多了，只能等日后二刷这本书。过一遍这本书最大的收获莫过于在面对问题的时候，自己的工具箱又多了不少工具，即使这工具还不太「趁手」。其中感受最深的就是现在看一些 Segmentfault 或 StackOverflow 问题的答案的时候不再那么毫无头绪，并开始试着从前辈们的角度思考问题。另外书中多次提到 Django 的一些实现方式，对自己日后读源码的时候有帮助。</p>
+<blockquote>
+<p>仓促本身就是最要不得的态度。当你做某件事的时候，一旦想要求快，就表示你再也不关心它，而想去做别的事。<br>
+——罗伯特 · M · 波西格 《禅与摩托车维修艺术》</p>
+</blockquote>
+<p>自己的确因为阅读计划的期限而读的仓促了一些，这句话放到文尾，提醒自己在读下一本书的时候，尽量做到静下心来。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">猫冬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://frankorz.com/2017/07/01/fluent-python-note/">http://frankorz.com/2017/07/01/fluent-python-note/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://frankorz.com" target="_blank">萤火之森</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/">读后感</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><div class="post_share"><div class="social-share" data-image="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/imgs/wechat-reward.jpg" target="_blank"><img class="post-qr-code-img" src="/imgs/wechat-reward.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/imgs/alipay-reward.jpg" target="_blank"><img class="post-qr-code-img" src="/imgs/alipay-reward.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2017/08/04/my-reading-habit/"><img class="prev-cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">自己的阅读兴趣</div></div></a></div><div class="next-post pull-right"><a href="/2017/07/01/go-learning-source/"><img class="next-cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">《流畅的 Python》读书笔记</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2017/07/01/go-learning-source/" title="《流畅的 Python》读书笔记"><img class="cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2017-07-01</div><div class="title">《流畅的 Python》读书笔记</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/imgs/head.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">猫冬</div><div class="author-info__description">各种知识火种~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Latias94"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Latias94" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:superfrankie621@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://weibo.com/u/1825527674" target="_blank" title="Weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="http://frankorz.com/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎来到萤火之森🐈</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">两个问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E4%BA%86-Python-%E5%9F%BA%E7%A1%80%E5%B0%B1%E5%A4%9F%E4%BA%86%E5%90%97%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">学了 Python 基础就够了吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%99%E6%9C%AC%E4%B9%A6%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">这本书的目的是什么？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AF%84%E4%BB%B7"><span class="toc-number">2.</span> <span class="toc-text">对内容的一些评价</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%BF%BB%E8%AF%91%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AF%84%E4%BB%B7"><span class="toc-number">3.</span> <span class="toc-text">对翻译的一些评价</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%A0%E8%8A%82%E7%AE%80%E4%BB%8B"><span class="toc-number">4.</span> <span class="toc-text">章节简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">4.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">4.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">4.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0"><span class="toc-number">4.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-number">4.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">4.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0"><span class="toc-number">4.7.</span> <span class="toc-text">第七章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0"><span class="toc-number">4.8.</span> <span class="toc-text">第八章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0"><span class="toc-number">4.9.</span> <span class="toc-text">第九章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0"><span class="toc-number">4.10.</span> <span class="toc-text">第十章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0"><span class="toc-number">4.11.</span> <span class="toc-text">第十一章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0"><span class="toc-number">4.12.</span> <span class="toc-text">第十二章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0"><span class="toc-number">4.13.</span> <span class="toc-text">第十三章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0"><span class="toc-number">4.14.</span> <span class="toc-text">第十四章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0"><span class="toc-number">4.15.</span> <span class="toc-text">第十五章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0"><span class="toc-number">4.16.</span> <span class="toc-text">第十六章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0"><span class="toc-number">4.17.</span> <span class="toc-text">第十七章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0"><span class="toc-number">4.18.</span> <span class="toc-text">第十八章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0"><span class="toc-number">4.19.</span> <span class="toc-text">第十九章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0"><span class="toc-number">4.20.</span> <span class="toc-text">第二十章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0"><span class="toc-number">4.21.</span> <span class="toc-text">第二十一章</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/04/17/compute-shader/" title="Compute Shader 简介">Compute Shader 简介</a><time datetime="2021-04-17T14:14:30.000Z" title="发表于 2021-04-17 22:14:30">2021-04-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/10/03/add-note-section-to-blog/" title="博客新增公开笔记部分">博客新增公开笔记部分</a><time datetime="2020-10-03T07:53:30.000Z" title="发表于 2020-10-03 15:53:30">2020-10-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/07/26/transformation/" title="图形学常见的变换推导">图形学常见的变换推导</a><time datetime="2020-07-26T09:46:35.000Z" title="发表于 2020-07-26 17:46:35">2020-07-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/05/23/2020-05-tech-reading/" title="2020年5月技术导读">2020年5月技术导读</a><time datetime="2020-05-23T08:05:35.000Z" title="发表于 2020-05-23 16:05:35">2020-05-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/04/13/2020-04-tech-reading/" title="2020年4月技术导读">2020年4月技术导读</a><time datetime="2020-04-13T13:14:49.000Z" title="发表于 2020-04-13 21:14:49">2020-04-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 猫冬</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="beian.miit.gov.cn"><span>粤ICP备19098175号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://frankorz.com/2017/07/01/fluent-python-note/'
+    this.page.identifier = '2017/07/01/fluent-python-note/'
+    this.page.title = '《流畅的 Python》读书笔记'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://frankorz.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Disqus' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script>if (window.DISQUSWIDGETS === undefined) {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://frankorz.disqus.com/count.js';
+  s.id = 'dsq-count-scr';
+  (d.head || d.body).appendChild(s);
+} else {
+  DISQUSWIDGETS.getCount({reset: true});
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

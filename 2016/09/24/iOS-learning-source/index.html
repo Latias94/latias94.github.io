@@ -1,0 +1,608 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iOS学习资源集合 | 萤火之森</title><meta name="keywords" content="Swift,iOS,Objective-C"><meta name="author" content="猫冬"><meta name="copyright" content="猫冬"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="总结个人在学习 iOS 的过程中遇到的精品资源，包含书籍、视频、网站等，一切等待我去探索的好物，主要以Swift 3.0为主。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS学习资源集合">
+<meta property="og:url" content="http://frankorz.com/2016/09/24/iOS-learning-source/index.html">
+<meta property="og:site_name" content="萤火之森">
+<meta property="og:description" content="总结个人在学习 iOS 的过程中遇到的精品资源，包含书籍、视频、网站等，一切等待我去探索的好物，主要以Swift 3.0为主。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://frankorz.com/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)">
+<meta property="article:published_time" content="2016-09-24T02:11:01.000Z">
+<meta property="article:modified_time" content="2019-08-17T04:00:54.000Z">
+<meta property="article:author" content="猫冬">
+<meta property="article:tag" content="Swift">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Objective-C">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://frankorz.com/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)"><link rel="shortcut icon" href="/imgs/favicon.ico"><link rel="canonical" href="http://frankorz.com/2016/09/24/iOS-learning-source/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-69634396-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-69634396-1');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2019-08-17 12:00:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/imgs/head.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">萤火之森</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">iOS学习资源集合</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2016-09-24T02:11:01.000Z" title="发表于 2016-09-24 10:11:01">2016-09-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2019-08-17T04:00:54.000Z" title="更新于 2019-08-17 12:00:54">2019-08-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/iOS%E5%9F%BA%E7%A1%80/">iOS基础</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="iOS学习资源集合"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><span class="disqus-comment-count"><a href="http://frankorz.com/2016/09/24/iOS-learning-source/#disqus_thread"></a></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><img src="http://img.frankorz.com/57ee03bfdc293.jpg" alt=""></p>
+<p>总结个人在学习 iOS 的过程中遇到的精品资源，包含书籍、视频、网站等，一切等待我去探索的好物，主要以Swift 3.0为主。</p>
+<span id="more"></span>
+<h3 id="视频">视频</h3>
+<table>
+<thead>
+<tr>
+<th>视频</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://itunes.apple.com/us/course/developing-ios-10-apps-swift/id1198467120">Developing iOS 10 Apps with Swift</a></td>
+<td>斯坦福白胡子老爷爷最新的 iOS10 和 Swift 3.0 课程。创建于 2017年1月24日，预计时长9周。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://itunes.apple.com/us/course/developing-ios-9-apps-swift/id1104579961">Developing iOS 9 Apps with Swift</a></td>
+<td>斯坦福白胡子老爷爷的 iOS9 和 Swift 课程，现在 <a target="_blank" rel="noopener" href="https://github.com/SwiftGGTeam/Developing-iOS-9-Apps-with-Swift">GitHub</a> 只翻译到第三节课。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099">Developing iOS 8 Apps with Swift</a></td>
+<td>斯坦福白胡子老爷爷的 iOS8 和 Swift 课程，已经翻译完成 <a target="_blank" rel="noopener" href="https://github.com/SwiftGGTeam/Developing_iOS_8_Apps_With_Swift">GitHub</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.swiftv.cn">SwiftV课堂</a></td>
+<td>国内一个Swift视频学习站</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.pomo.tv">pomo.tv</a></td>
+<td>国外一个收集关于Mac、iOS 和 Swift视频的网站</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLgwNtYvZGv9STGDSx_knjYyzS7XzmpK84">Principle UI/UX Animation Tutorials</a></td>
+<td>SketchTV 在 Youtube 上录制的 Principle (交互原型设计软件) 视频，Principle 相关<a target="_blank" rel="noopener" href="http://principleux.com/principle-chinese-document/">中文文档</a>，<a target="_blank" rel="noopener" href="http://principleformac.com/tutorial.html">官方文档</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="YouTube-频道">YouTube 频道</h3>
+<table>
+<thead>
+<tr>
+<th>频道名</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCysEngjfeIYapEER9K8aikw">Brian Advent</a></td>
+<td>Follow me around and learn iOS and macOS Development by examples.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC-d1NWv5IWtIkfH47ux4dWA">The Swift Guy</a></td>
+<td>On this channel I put out tutorials, and other types of videos that are relevant to the Swift programming language.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw">CodeWithChris</a></td>
+<td>Learn how to make an app with Swift and Xcode and how to turn your app idea into a reality!</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCDIBBmkZIB2hjBsk1hUImdA">Jared Davidson</a></td>
+<td>IOS Developer / How to Make Apps</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA">Lets Build That App</a></td>
+<td>I’ll do my best to teach you how to build working apps from the AppStore, i.e. YouTube, Facebook, FB Messenger, etc.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UChH6WbyYeX0INJjrK2-6WSg">Mark Moeykens</a></td>
+<td>Free iOS, Xcode and Swift tutorials!</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCrhO60YNOqODpMPRQZj2NQg">Harry Ng</a></td>
+<td>主要是 OSX 的教程</td>
+</tr>
+</tbody>
+</table>
+<h3 id="书籍">书籍</h3>
+<table>
+<thead>
+<tr>
+<th>书名</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://gg.swiftguide.cn">中文版 Apple 官方 Swift 教程《The Swift Programming Language》</a></td>
+<td>国人发起的官方教程翻译，目前更新到Swift 3.0 <a target="_blank" rel="noopener" href="https://github.com/numbbbbb/the-swift-programming-language-in-chinese">Github</a> <a target="_blank" rel="noopener" href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html">Start Developing iOS Apps (Swift)</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.raywenderlich.com/store/ios-10-by-tutorials">iOS 10 by tutorials</a></td>
+<td>raywenderlich精品书籍，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.appcoda.com/swift/">Beginning iOS 10 Programming with Swift</a></td>
+<td>appcoda精品书籍，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.appcoda.com.tw/books/">iOS 10 App 程式設計實力超進化實戰攻略</a></td>
+<td>和楼上电子书对应的湾湾翻译版</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.bignerdranch.com/we-write/ios-programming/">iOS Programming: The Big Nerd Ranch Guide 5th Edition</a></td>
+<td>The Big Nerd Ranch Guide 推崇困难式学习，该系列书的第四版中译获得豆瓣9.0的高分，目前第六版更新到iOS 10和Swift 3.0，十分值得学习，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://itunes.apple.com/us/book/core-image-for-swift/id1073029980?mt=13">Core Image for Swift</a></td>
+<td>学习 Core Image 框架，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26919791/">Beginning iPhone Development with Swift 3 Exploring the iOS SDK</a></td>
+<td>Apress精品书，本系列中译名为精通iOS编程。这版本讲iOS 10和Swift 3.0，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.gitbook.com/book/zsisme/ios-/details">ios核心动画高级技巧</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.amazon.com/iOS-Core-Animation-Advanced-Techniques-ebook/dp/B00EHJCORC/ref=sr_1_1?ie=UTF8&amp;qid=1423192842&amp;sr=8-1&amp;keywords=Core+Animation+Advanced+Techniques">iOS Core Animation: Advanced Techniques</a>中文译本，由 OC 编写</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.gitbook.com/book/zonble/kkbox-ios-dev/details">KKBOX iOS/Mac OS X 基本開發教材</a></td>
+<td>這份教材是為了 KKBOX iOS/Mac OS X 開發部門的新人訓練所設計，目的是培養 出可以開發、維護 KKBOX 的 iOS 與 Mac OS X 版本，以及我們其他軟體產品的工程師。本书由 OC 编写</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://gumroad.com/l/JnWS">A GUIDE TO IOS ANIMATION 2.0</a></td>
+<td>一本关于 iOS 动画的独具匠心的交互式电子书，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.hackingwithswift.com">Hacking With Swift</a></td>
+<td>免费在线 Swift 教程</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://designcode.io">Design+Code</a></td>
+<td>学习 iOS 开发设计最好的书籍，付费</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://designthencode.com">Design Then Code</a></td>
+<td>学会设计和开发 iOS 应用，付费。<a target="_blank" rel="noopener" href="https://github.com/Cloudox/Motion-Design-for-iOS">中文翻译</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="网站">网站</h3>
+<table>
+<thead>
+<tr>
+<th>网站名</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://developer.apple.com/swift/resources/">Swift Resources</a></td>
+<td>苹果官方为开发者提供的 Swift 学习资源</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://swift.gg">SwiftGG</a></td>
+<td>国内走心的Swift翻译组，翻译了很多高质量文章</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://swift.org/">Swift 官方网站</a></td>
+<td>Swift的开源阶段成果和使用指导</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/apple/swift-evolution">swift-evolution</a></td>
+<td>Swift改进的最新进度</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.raywenderlich.com">Ray Wenderlich</a></td>
+<td>专注苹果开发，创造大量有价值的开发资源如文章、视频、播客、书籍等。<a target="_blank" rel="noopener" href="https://www.raywenderlich.com/category/swift">Swift文章区</a> <a target="_blank" rel="noopener" href="https://www.raywenderlich.com/category/ios">iOS文章区</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.learnswift.tips/">LearnSwift.tips</a></td>
+<td>国外一个学习Swift资源列表网站</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.objc.io">objc</a></td>
+<td>objc.io是一个专门为iOS和OS X开发者提供的深入讨论技术的平台,文章含金量很高。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.objccn.io">objc中国</a></td>
+<td>objc翻译组，<a target="_blank" rel="noopener" href="https://github.com/objccn/articles">Github</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.appcoda.com.tw/">APPCoda 台湾</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.appcoda.com">APPCoda</a> 中教程的翻译，APPCoda 也是专注苹果开发的网站，有自己的电子书和开发教学文章，<a target="_blank" rel="noopener" href="http://www.appcoda.com.tw/feed/">RSS</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://nshipster.cn">NSHipster翻译</a></td>
+<td>NSHipster 关注被忽略的 Objective-C、Swift 和 Cocoa 特性，这里是NSHipster的翻译组网站</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.cocoachina.com">CocoChina</a></td>
+<td>国内苹果开发中文社区</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://ios.jobbole.com">伯乐在线</a></td>
+<td>国内分享iOS和Swift开发的网站</td>
+</tr>
+</tbody>
+</table>
+<h3 id="各大iOS资源合集">各大iOS资源合集</h3>
+<table>
+<thead>
+<tr>
+<th>Github</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/insidegui/WWDC">WWDC</a></td>
+<td>非官方的 WWDC app for macOS</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/Aufree/trip-to-iOS">trip-to-iOS</a></td>
+<td>6000+star的iOS学习资料整理</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ipader/SwiftGuide">SwiftGuide</a></td>
+<td>1W+star的swift语言学习资源指南</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/Tim9Liu9/TimLiu-iOS">TimLiu-iOS</a></td>
+<td>4000+star的iOS开发常用三方库、插件、知名博客汇总</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/jobbole/awesome-ios-cn">awesome-ios-cn</a></td>
+<td>1W5+star的 <a target="_blank" rel="noopener" href="https://github.com/vsouza/awesome-ios">awesome-ios</a> 中译版</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/matteocrippa/awesome-swift">awesome-swift</a></td>
+<td>9000+star的Swift资源集合</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/dkhamsing/open-source-ios-apps">open-source-ios-apps</a></td>
+<td>1W+star的开源iOS应用集合</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/raywenderlich/swift-algorithm-club">swift-algorithm-club</a></td>
+<td>8000+star的Swift算法和数据结构集合，由raywenderlich创建。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/larrynatalicio/15DaysofAnimationsinSwift">15DaysofAnimationsinSwift</a></td>
+<td>2000+star学习用swift写动画的项目</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.v2ex.com/t/309549">iOS 开发学习笔记</a></td>
+<td>OneNote笔记，onepkg格式可在win版导入OneNote，笔记适合刚入门的 iOS 开发或有 C 、 OC 基础的同学。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/tangqiaoboy/iOSBlogCN">iOSBlogCN</a></td>
+<td>中文 iOS/Mac 开发博客列表</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/Draveness/iOS-Source-Code-Analyze">iOS-Source-Code-Analyze</a></td>
+<td>深入解析 iOS 开源项目 <a target="_blank" rel="noopener" href="http://draveness.me">http://draveness.me</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="相关的教程">相关的教程</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://pomax.github.io/bezierinfo/">A Primer on Bézier Curves</a></td>
+<td>关于贝塞尔曲线的教程</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/yrq110/some-ios-tutorials-with-swift">some-ios-tutorials-with-swift</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/yrq110">yrq110</a> 翻译的一些使用 Swift 的 iOS 教程 <a target="_blank" rel="noopener" href="https://yrq110.gitbooks.io/some_ios_tutorials_with_swift/content/">Gitbook</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://t.swift.gg/d/2-rxswift">RxSwift 系列教程</a></td>
+<td>靛青K 发布的 RxSwift 系列教程</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.shinobicontrols.com/blog/ios-10-day-by-day-index">iOS10 Day-by-Day</a></td>
+<td>一个介绍 iOS 10 API 的系列教程</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.shinobicontrols.com/blog/ios9-day-by-day-index">iOS9 Day-by-Day</a></td>
+<td>一个介绍 iOS 9 API 的系列教程</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://andrewmika.gitbooks.io/xcode-server-and-continuous-integration-guide-cn/content/">《Xcode Server and Continuous Integration Guide》中文版</a></td>
+<td>使用Xcode Server进行持续集成，<a target="_blank" rel="noopener" href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/#//apple_ref/doc/uid/TP40013292-CH1-SW1">About Continuous Integration in Xcode</a>的翻译，<a target="_blank" rel="noopener" href="https://www.gitbook.com/book/andrewmika/-xcode-server-and-continuous-integration-guide/details">GitBook地址</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/futurice/ios-good-practices">ios-good-practices</a></td>
+<td>iOS 开发最佳实践</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/">iOS Human Interface Guidelines</a></td>
+<td>iOS 人机界面指南，<a target="_blank" rel="noopener" href="https://github.com/Cloudox/iOS-Human-Interface-Guidelines">中文翻译</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/raywenderlich/swift-style-guide">Swift编码规范</a></td>
+<td>来自 Ray Wenderlich 的 Swift 编码规范</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/">Xcode Markup Formatting</a></td>
+<td>学习 Xcode 中如何使用 Markup Formatting</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://askwonder.com/q/quartz-composer-55723eb43dcda4201a12cbc4">Quartz Composer学习</a></td>
+<td>QC 学习路线，关于 iOS 的一些动态交互</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://zsisme.gitbooks.io/ios-/content/">iOS 核心动画高级技巧</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.amazon.com/iOS-Core-Animation-Advanced-Techniques-ebook/dp/B00EHJCORC/ref=sr_1_1?ie=UTF8&amp;qid=1423192842&amp;sr=8-1&amp;keywords=Core+Animation+Advanced+Techniques">iOS Core Animation: Advanced Techniques</a> 的译本，由 OC 编写</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/xitu/gold-miner/blob/master/TODO/google.interview.university.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E8%AF%BE%E7%A8%8B">Google Interview University</a></td>
+<td>一套完整的学习手册帮助自己准备 Google 的面试</td>
+</tr>
+</tbody>
+</table>
+<h3 id="RSS">RSS</h3>
+<p>我关注的一些 RSS 源，博客方面关注较少。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>Feed 源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swift – Ray Wenderlich</td>
+<td><a target="_blank" rel="noopener" href="https://www.raywenderlich.com/category/swift/feed">https://www.raywenderlich.com/category/swift/feed</a></td>
+</tr>
+<tr>
+<td>AppCoda 台湾</td>
+<td><a target="_blank" rel="noopener" href="http://www.appcoda.com.tw/feed/">http://www.appcoda.com.tw/feed/</a></td>
+</tr>
+<tr>
+<td>Big Nerd Ranch</td>
+<td><a target="_blank" rel="noopener" href="https://www.bignerdranch.com/rss">https://www.bignerdranch.com/rss</a></td>
+</tr>
+<tr>
+<td>Swift GG 翻译组</td>
+<td><a target="_blank" rel="noopener" href="http://swift.gg/atom.xml">http://swift.gg/atom.xml</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://mobilefrontier.github.io">移动开发前线</a></td>
+<td><a target="_blank" rel="noopener" href="http://mobilefrontier.github.io/index.xml">http://mobilefrontier.github.io/index.xml</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://medium.com/swift-programming/all">Medium-Swift Programming</a></td>
+<td><a target="_blank" rel="noopener" href="https://medium.com/feed/swift-programming/">https://medium.com/feed/swift-programming/</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://medium.com/ios-os-x-development/all">Medium-iOS App Development</a></td>
+<td><a target="_blank" rel="noopener" href="https://medium.com/feed/ios-os-x-development/">https://medium.com/feed/ios-os-x-development/</a></td>
+</tr>
+<tr>
+<td>掘金-iOS</td>
+<td><a target="_blank" rel="noopener" href="https://api.prprpr.me/xitu/ios">https://api.prprpr.me/xitu/ios</a></td>
+</tr>
+<tr>
+<td>IOS – 伯乐在线</td>
+<td><a target="_blank" rel="noopener" href="http://ios.jobbole.com/feed/">http://ios.jobbole.com/feed/</a></td>
+</tr>
+<tr>
+<td>CocoaChina</td>
+<td><a target="_blank" rel="noopener" href="http://www.cocoachina.com/cms/rss.php">http://www.cocoachina.com/cms/rss.php</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://mrpeak.cn/">MrPeak杂货铺</a></td>
+<td><a target="_blank" rel="noopener" href="http://mrpeak.cn/feed.xml">http://mrpeak.cn/feed.xml</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://onevcat.com/">OneV’s Den</a></td>
+<td><a target="_blank" rel="noopener" href="https://onevcat.com/feed.xml">https://onevcat.com/feed.xml</a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://gank.io">干货集中营</a></td>
+<td><a target="_blank" rel="noopener" href="http://gank.io/feed">http://gank.io/feed</a></td>
+</tr>
+</tbody>
+</table>
+<p>关于 Medium 上的文章 RSS 可以参考 <a target="_blank" rel="noopener" href="http://webapps.stackexchange.com/questions/85611/rss-atom-feed-for-medium-com-blog-tag">RSS/Atom feed for medium.com blog tag</a>。</p>
+<!--### 工具 -->
+<!--(写的不全又舍不得删，就这样吧。)
+
+| 名称 | 简介 |
+| --- | --- |
+| [RAP](http://rapapi.net/) | Web接口管理工具，开源免费，接口自动化，MOCK数据自动生成，自动化测试，企业级管理。 |
+| [iOS-Images-Extractor](https://github.com/devcxm/iOS-Images-Extractor) | 提取iOS应用图片 |
+| [接口参考](https://www.zhihu.com/question/39479153) | 知乎上关于接口资源的回答 |
+| [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) | Swift OAuth 库 |
+| [Alamofire](https://github.com/Alamofire/Alamofire) | Elegant HTTP Networking in Swift |-->
+<p>&lt;未完待续&gt;</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">猫冬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://frankorz.com/2016/09/24/iOS-learning-source/">http://frankorz.com/2016/09/24/iOS-learning-source/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://frankorz.com" target="_blank">萤火之森</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Swift/">Swift</a><a class="post-meta__tags" href="/tags/iOS/">iOS</a><a class="post-meta__tags" href="/tags/Objective-C/">Objective-C</a></div><div class="post_share"><div class="social-share" data-image="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/imgs/wechat-reward.jpg" target="_blank"><img class="post-qr-code-img" src="/imgs/wechat-reward.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/imgs/alipay-reward.jpg" target="_blank"><img class="post-qr-code-img" src="/imgs/alipay-reward.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2016/09/29/iPad-Pro%20study/"><img class="prev-cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">利用iPad Pro学习方面的探索</div></div></a></div><div class="next-post pull-right"><a href="/2016/02/04/%E9%98%B4%E5%8E%86%E7%AE%97%E6%B3%95/"><img class="next-cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">阳历转阴历算法</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2017/01/22/ios-animations-note/" title="iOS 动画笔记"><img class="cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2017-01-22</div><div class="title">iOS 动画笔记</div></div></a></div><div><a href="/2016/10/17/powerful-jsonexport/" title="用JSONExport一键生成JSON Model"><img class="cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2016-10-17</div><div class="title">用JSONExport一键生成JSON Model</div></div></a></div><div><a href="/2017/01/16/core-data-note-1/" title="Core Data 笔记[上篇]"><img class="cover" src="/linear-gradient(20deg,%20#0062be,%20#925696,%20#cc426e,%20#fb0347)" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2017-01-16</div><div class="title">Core Data 笔记[上篇]</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/imgs/head.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">猫冬</div><div class="author-info__description">各种知识火种~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Latias94"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Latias94" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:superfrankie621@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://weibo.com/u/1825527674" target="_blank" title="Weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="http://frankorz.com/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎来到萤火之森🐈</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91"><span class="toc-number">1.</span> <span class="toc-text">视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YouTube-%E9%A2%91%E9%81%93"><span class="toc-number">2.</span> <span class="toc-text">YouTube 频道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A6%E7%B1%8D"><span class="toc-number">3.</span> <span class="toc-text">书籍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99"><span class="toc-number">4.</span> <span class="toc-text">网站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E5%A4%A7iOS%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86"><span class="toc-number">5.</span> <span class="toc-text">各大iOS资源合集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E7%9A%84%E6%95%99%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">相关的教程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">7.</span> <span class="toc-text">RSS</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/04/17/compute-shader/" title="Compute Shader 简介">Compute Shader 简介</a><time datetime="2021-04-17T14:14:30.000Z" title="发表于 2021-04-17 22:14:30">2021-04-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/10/03/add-note-section-to-blog/" title="博客新增公开笔记部分">博客新增公开笔记部分</a><time datetime="2020-10-03T07:53:30.000Z" title="发表于 2020-10-03 15:53:30">2020-10-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/07/26/transformation/" title="图形学常见的变换推导">图形学常见的变换推导</a><time datetime="2020-07-26T09:46:35.000Z" title="发表于 2020-07-26 17:46:35">2020-07-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/05/23/2020-05-tech-reading/" title="2020年5月技术导读">2020年5月技术导读</a><time datetime="2020-05-23T08:05:35.000Z" title="发表于 2020-05-23 16:05:35">2020-05-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/04/13/2020-04-tech-reading/" title="2020年4月技术导读">2020年4月技术导读</a><time datetime="2020-04-13T13:14:49.000Z" title="发表于 2020-04-13 21:14:49">2020-04-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 猫冬</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="beian.miit.gov.cn"><span>粤ICP备19098175号-1</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://frankorz.com/2016/09/24/iOS-learning-source/'
+    this.page.identifier = '2016/09/24/iOS-learning-source/'
+    this.page.title = 'iOS学习资源集合'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://frankorz.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Disqus' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script>if (window.DISQUSWIDGETS === undefined) {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://frankorz.disqus.com/count.js';
+  s.id = 'dsq-count-scr';
+  (d.head || d.body).appendChild(s);
+} else {
+  DISQUSWIDGETS.getCount({reset: true});
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
