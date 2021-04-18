@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>萤火之森</title>
-  <icon>http://frankorz.com/icon.png</icon>
+  <icon>http://frankorz.com/imgs/favicon.ico</icon>
   <subtitle>知识传承之地</subtitle>
   <link href="http://frankorz.com/atom.xml" rel="self"/>
   
