@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://frankorz.com/about/index.html</loc>
+    <loc>http://frankorz.com/2021/04/18/learn-pixel-art/</loc>
     
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     
   </url>
   
   <url>
-    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
+    <loc>http://frankorz.com/2020/10/03/add-note-section-to-blog/</loc>
     
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/pixel-art/index.html</loc>
+    
+    <lastmod>2021-04-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/about/index.html</loc>
+    
+    <lastmod>2021-04-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
+    
+    <lastmod>2021-04-18</lastmod>
     
   </url>
   
   <url>
     <loc>http://frankorz.com/2020/07/26/transformation/</loc>
     
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
+    
+    <lastmod>2021-04-18</lastmod>
     
   </url>
   
@@ -65,13 +93,6 @@
   </url>
   
   <url>
-    <loc>http://frankorz.com/2020/10/03/add-note-section-to-blog/</loc>
-    
-    <lastmod>2020-10-03</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://frankorz.com/2020/05/23/2020-05-tech-reading/</loc>
     
     <lastmod>2020-05-24</lastmod>
@@ -96,13 +117,6 @@
     <loc>http://frankorz.com/2020/01/31/illustrated-csharp-and-performance/</loc>
     
     <lastmod>2020-02-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
-    
-    <lastmod>2019-12-04</lastmod>
     
   </url>
   
@@ -312,7 +326,7 @@
 
   <url>
     <loc>http://frankorz.com/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -320,203 +334,210 @@
   
   <url>
     <loc>http://frankorz.com/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Hexo/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/3D%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Swift/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Go/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Unity/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/iOS/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Objective-C/</loc>
-    <lastmod>2021-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/tags/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2021-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/tags/macOS/</loc>
-    <lastmod>2021-04-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/tags/APP/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/iPad/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/tags/APP/</loc>
+    <lastmod>2021-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/tags/%E5%8A%A8%E7%94%BB/</loc>
+    <lastmod>2021-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/tags/%E7%BB%98%E7%94%BB/</loc>
+    <lastmod>2021-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/tags/macOS/</loc>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/JSON/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/RSS/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Workflow/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E6%9C%AA%E5%AE%8C%E5%B7%A5/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Python/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/MongoDB/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Ruby/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/ECS/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Shader/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/tags/Core-Data/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -525,42 +546,42 @@
   
   <url>
     <loc>http://frankorz.com/categories/%E5%AF%BC%E8%AF%BB/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/categories/iOS%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/categories/Unity/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://frankorz.com/categories/%E5%B7%A5%E5%85%B7%E7%99%96/</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
