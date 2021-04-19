@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://frankorz.com/2019/01/13/install-kodi-with-tweakbox/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/01/22/ios-animations-note/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2021/04/18/learn-pixel-art/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2016/10/24/manage-books-on-macOS/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/09/24/matrix-transformation-2/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/03/29/mooc-and-pomotodo/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/08/04/my-reading-habit/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
     <loc>http://frankorz.com/2016/10/21/new-time-tracking-app-on-macOS/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
@@ -61,15 +33,15 @@
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
-    <loc>http://frankorz.com/2017/02/16/mongodb_operate_in_irb/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
     <loc>http://frankorz.com/2019/05/07/simple-talk-unity-dots/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
     <loc>http://frankorz.com/2020/07/26/transformation/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2020/05/23/2020-05-tech-reading/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
@@ -121,6 +93,34 @@
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
+    <loc>http://frankorz.com/2019/01/13/install-kodi-with-tweakbox/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/01/22/ios-animations-note/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2021/04/18/learn-pixel-art/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2016/10/24/manage-books-on-macOS/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/09/24/matrix-transformation-2/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/03/29/mooc-and-pomotodo/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/08/04/my-reading-habit/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
     <loc>http://frankorz.com/2018/06/22/finite-state-machine-in-unity/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
@@ -137,6 +137,10 @@
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
+    <loc>http://frankorz.com/2017/02/16/mongodb_operate_in_irb/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
     <loc>http://frankorz.com/2019/07/14/clarify-ecs-basic-concept/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
@@ -150,10 +154,6 @@
   </url>
   <url>
     <loc>http://frankorz.com/2020/04/13/2020-04-tech-reading/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2020/05/23/2020-05-tech-reading/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
