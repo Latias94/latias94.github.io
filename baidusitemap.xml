@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://frankorz.com/2016/10/21/new-time-tracking-app-on-macOS/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2016/10/17/powerful-jsonexport/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
     <loc>http://frankorz.com/2017/08/05/recommandation-of-some-efficient-software/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
@@ -38,6 +30,10 @@
   </url>
   <url>
     <loc>http://frankorz.com/2020/07/26/transformation/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2020/04/13/2020-04-tech-reading/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
@@ -121,6 +117,18 @@
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
+    <loc>http://frankorz.com/2016/10/21/new-time-tracking-app-on-macOS/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2016/10/17/powerful-jsonexport/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
     <loc>http://frankorz.com/2018/06/22/finite-state-machine-in-unity/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
@@ -150,14 +158,6 @@
   </url>
   <url>
     <loc>http://frankorz.com/2017/01/16/core-data-note-1/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2020/04/13/2020-04-tech-reading/</loc>
-    <lastmod>2021-04-19</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
     <lastmod>2021-04-19</lastmod>
   </url>
   <url>
