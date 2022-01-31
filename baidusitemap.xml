@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://frankorz.com/2020/01/31/illustrated-csharp-and-performance/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2019/01/13/install-kodi-with-tweakbox/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/01/22/ios-animations-note/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2021/04/18/learn-pixel-art/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2016/10/24/manage-books-on-macOS/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/09/24/matrix-transformation-2/</loc>
+    <loc>http://frankorz.com/2022/01/18/rust-study-resource/</loc>
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
@@ -66,14 +46,6 @@
   </url>
   <url>
     <loc>http://frankorz.com/2016/02/04/%E9%98%B4%E5%8E%86%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2016/09/29/iPad-Pro%20study/</loc>
-    <lastmod>2022-01-31</lastmod>
-  </url>
-  <url>
-    <loc>http://frankorz.com/2017/02/16/mongodb_operate_in_irb/</loc>
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
@@ -137,6 +109,30 @@
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
+    <loc>http://frankorz.com/2020/01/31/illustrated-csharp-and-performance/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2019/01/13/install-kodi-with-tweakbox/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/01/22/ios-animations-note/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2021/04/18/learn-pixel-art/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2016/10/24/manage-books-on-macOS/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/09/24/matrix-transformation-2/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
     <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
     <lastmod>2022-01-31</lastmod>
   </url>
@@ -153,7 +149,11 @@
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
-    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
+    <loc>http://frankorz.com/2016/09/29/iPad-Pro%20study/</loc>
+    <lastmod>2022-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://frankorz.com/2017/02/16/mongodb_operate_in_irb/</loc>
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
@@ -161,12 +161,12 @@
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
-    <loc>http://frankorz.com/2017/01/16/core-data-note-1/</loc>
+    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
     <lastmod>2022-01-31</lastmod>
   </url>
   <url>
-    <loc>http://frankorz.com/2022/01/18/rust-study-resource/</loc>
-    <lastmod>2022-01-20</lastmod>
+    <loc>http://frankorz.com/2017/01/16/core-data-note-1/</loc>
+    <lastmod>2022-01-31</lastmod>
   </url>
   <url>
     <loc>http://frankorz.com/2016/10/12/Swift-Algorithms-1/</loc>
