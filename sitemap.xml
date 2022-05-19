@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://frankorz.com/2016/02/04/%E9%98%B4%E5%8E%86%E7%AE%97%E6%B3%95/</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/about/index.html</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/categories/index.html</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://frankorz.com/link/index.html</loc>
     
     <lastmod>2022-05-19</lastmod>
@@ -48,42 +21,6 @@
   
   <url>
     <loc>http://frankorz.com/tags/index.html</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2018/06/17/arethas-journey/</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2017/09/22/basic-of-vector-and-matrix-transformation/</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2017/02/20/decorator-in-swift/</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2018/04/13/first-board-game/</loc>
     
     <lastmod>2022-05-19</lastmod>
     
@@ -281,7 +218,7 @@
   </url>
   
   <url>
-    <loc>http://frankorz.com/2018/06/22/finite-state-machine-in-unity/</loc>
+    <loc>http://frankorz.com/2016/02/04/%E9%98%B4%E5%8E%86%E7%AE%97%E6%B3%95/</loc>
     
     <lastmod>2022-05-19</lastmod>
     
@@ -344,7 +281,7 @@
   </url>
   
   <url>
-    <loc>http://frankorz.com/2019/07/14/clarify-ecs-basic-concept/</loc>
+    <loc>http://frankorz.com/about/index.html</loc>
     
     <lastmod>2022-05-19</lastmod>
     
@@ -353,16 +290,7 @@
   </url>
   
   <url>
-    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
-    
-    <lastmod>2022-05-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://frankorz.com/2017/01/16/core-data-note-1/</loc>
+    <loc>http://frankorz.com/categories/index.html</loc>
     
     <lastmod>2022-05-19</lastmod>
     
@@ -407,7 +335,79 @@
   </url>
   
   <url>
+    <loc>http://frankorz.com/2018/06/17/arethas-journey/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2017/09/22/basic-of-vector-and-matrix-transformation/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2017/02/20/decorator-in-swift/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2018/04/13/first-board-game/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://frankorz.com/2019/12/04/2019-year-end-summary/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2018/06/22/finite-state-machine-in-unity/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2019/07/14/clarify-ecs-basic-concept/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2021/04/17/compute-shader/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://frankorz.com/2017/01/16/core-data-note-1/</loc>
     
     <lastmod>2022-05-19</lastmod>
     
