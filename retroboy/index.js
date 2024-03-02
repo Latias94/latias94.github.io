@@ -1,4 +1,4 @@
-import init, * as wasm from "./retroboy.js"
+import init, * as wasm from "./retroboy_chip8.js"
 
 const WIDTH = 64
 const HEIGHT = 32
